@@ -1,0 +1,92 @@
+<!DOCTYPE HTML>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <title>喜欢跳舞,就去跳</title>
+    <!--<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />-->
+    <meta name="viewport" content="target-densitydpi=device-dpi,width=720,user-scalable=0" />
+    <meta name="keywords" content="99广场舞" />
+    <meta name="description" content="喜欢跳舞就去跳,我在99广场舞等你" />
+    <meta name="apple-mobile-web-app-capable" content="no" />
+    <meta name="format-detection" content="telephone=no">
+    <link rel="stylesheet" type="text/css" href="../css/style-animate.min.css">
+    <link rel="stylesheet" type="text/css" href="../css/style-index.css" />
+    <script src="http://wximg.qq.com/wxp/libs/wxmoment/0.0.4/wxmoment.min.js"></script>
+
+    <script src="../js/common.js"></script>
+</head>
+<body>
+<!--页面加载中开始-->
+<section id="loading">
+    <img src="../img/loading.gif" alt="页面加载中">
+</section>
+<!--页面加载中结束-->
+
+<!--第一屏信息显示开始-->
+<section id="im">
+    <div class="search">
+        <span>微信 (<em>7</em>)</span>
+        <i class="icon-search"></i>
+        <i class="icon-add"></i>
+    </div>
+    <div class="main">
+        <ul>
+        </ul>
+    </div>
+    <div class="nav"></div>
+    <!--<div class="bg"></div>-->
+</section>
+<!--第一屏信息显示结束-->
+
+<!--第二屏聊天信息开始-->
+<section id="chat" >
+    <div class="scroll">
+        <div class="time">
+            <span class="back"></span>
+            <span class="name">杨艺</span>
+        </div>
+        <ul class="list">
+
+        </ul>
+    </div>
+    <div class="ime">
+        <img src="../img/mes.png" alt="">
+    </div>
+    <!--<div class="bg"></div>-->
+</section>
+
+<!--第二屏聊天信息结束-->
+
+<section id="video">
+    <video src="video/1.mp4" x-webkit-airplay="true" webkit-playsinline="true" preload="auto" ontimeupdate="videoUpdate(this)" id="video-1"></video>
+</section>
+<section id="end">
+    <!--点我赢大奖-->
+    <a href="javascript:;" class="end-link"></a>
+
+    <a href="javascript:;" class="end-share"></a>
+</section>
+<section id="share">
+    <span></span>
+</section>
+<audio preload="auto" style="width:0;height:0" id="audio-chat">
+    <source src="../img/1.mp3" type="audio/mpeg" />
+</audio>
+<audio preload="auto" style="width:0;height:0" id="audio-btn">
+    <source src="../img/2.mp3" type="audio/mpeg" />
+</audio>
+<audio preload="auto" style="width:0;height:0" id="audio-type">
+    <source src="../img/3.mp3" type="audio/mpeg" />
+</audio>
+<audio preload="auto" style="width:0;height:0" id="audio-emo">
+    <source src="../img/4.mp3" type="audio/mpeg" />
+</audio>
+
+
+
+
+
+
+
+</body>
+</html>
