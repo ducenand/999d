@@ -1,18 +1,17 @@
 /**
  * Created by ducen on 16/7/20.
  */
-var fileBasePath = '/';
-var myDate = new Date();
-
+var fileBasePath = '../';
+var myDate = new Date(),timers = [],timer=null;
 var obj = {
     'yangyi':{
         'name':'杨艺',
         'time':getNowFormatDate(),
         'huihua':{
             1:'你还好吗?',
-            2:'最近跳广场舞了吗?',
+            2:'最近跳广场舞了吗?'+' <img src="../img/meo.jpg">',//img为表情
             3:'我一直都把你当作我的朋友,因为我们都喜欢跳舞。喜欢跳舞就一定要坚持跳。我们其实有好多话想给你说,先看看下面的小视屏吧!',
-            4:'<img src="../img/photo-1.jpg">'
+            4:'<img class="video animated zoomIn" src="../img/yangyi/video-yangyi.jpg"><img class="bofang animated flip" src="../img/bofang.jpg">'
         }
     },
     'gegewu':{
@@ -22,7 +21,7 @@ var obj = {
             1:'我创作了新的舞蹈,不知道你喜欢吗?',
             2:'最近跳广场舞了吗?',
             3:'我一直都把你当作我的朋友,因为我们都喜欢跳舞。喜欢跳舞就一定要坚持跳。我们其实有好多话想给你说,先看看下面的小视屏吧!',
-            4:'这里是视频'
+            4:'<img class="video animated zoomIn" src="../img/yangyi/video-yangyi.jpg"><img class="bofang animated flip" src="../img/bofang.jpg">'
         }
     },
     'meijiu':{
@@ -35,34 +34,44 @@ var obj = {
         }
     }
 }
+
+
 var fileList = [
-    'img/add.png',
-    'img/apply.png',
+    'img/background.png',
+    'img/meo.jpg',
+    'img/bofang.jpg',
+    'img/dibudaohang.jpg',
+    'img/mes.jpg',
+    'img/jia.png',
+    'img/search.png',
+    'img/arrow-return.png',
     'img/arrow-1.png',
-    'img/arrow-2.png',
-    'img/arrow-3.png',
-    'img/arrow-5.png',
-    'img/emo.png',
-    'img/end.jpg',
-    'img/hand.png',
-    'img/head-liyifeng.jpg',
-    'img/head-qqbrowser.jpg',
-    'img/photo-1.jpg',
-    'img/share.png',
-    'img/video.jpg',
+    // 'img/emo.png',
+    // 'img/video.jpg',
     'img/1.mp3',
     'img/2.mp3',
-    'img/3.mp3',
-    'img/4.mp3'
+    // 'img/3.mp3',
+    // 'img/4.mp3'
 ];
 
-for (var i = 1; i <= 31; i++) {
-    fileList.push( 'img/input1/' + i + '.jpg' );
-};
+//加载所有头像所有视频图片
+for(var j in obj){
+    if(obj.hasOwnProperty(j)) {
+        fileList.push('img/' + j + '/head-' + j + '.jpg');
+        fileList.push('img/' + j + '/video-' + j + '.jpg');
+        if (j == 'yangyi') {//加载杨艺老师视频页面图片
 
-for (var i = 1; i <= 40; i++) {
-    fileList.push( 'img/input2/' + i + '.jpg' );
-};
+            for (var i = 1; i <= 14; i++) {
+                fileList.push('img/' + j + '/page-' + i + '.png');
+            }
+        }
+    }
+}
+
+
+
+
+
 //资源加载
 var loader = new WxMoment.Loader();
 
@@ -82,9 +91,9 @@ loader.addCompletionListener(function () {
     setTimeout(function(){
         $('#loading').css('display','none');
         $('#im').addClass('show');
-    },3000);
+    },2000);
     
-    // $('#im').addClass('show');
+
     // _hmt.push(['_trackEvent', '页面加载', '状态', '页面加载完成']);
 });
 // +++++++++所有图片资源加载完成+++++++++||
@@ -96,6 +105,8 @@ $(function() {
     loader.start();
     // _hmt.push(['_trackEvent', '页面加载', '状态', '页面加载开始']);
 
+    YangYiswipe.init();//初始化第三屏动画
+
     autoHeight();
     //窗口变动修改一些页面的高度
     $(window).bind('resize',function(event){
@@ -103,7 +114,7 @@ $(function() {
     });
 
     var isAndroid = 0;
-
+    //检测浏览器
     var browser = {
         versions : function() {
             var u = navigator.userAgent,
@@ -117,50 +128,69 @@ $(function() {
     };
     if ( browser.versions.android ) {
         isAndroid = 1;
-        $('#video-1').attr({'controls':'controls'});
+        // $('#video-1').attr({'controls':'controls'});
+        $('body').addClass('animate');//body添加动画
+
     } else {
         $('body').addClass('animate');//body添加动画
     }
 
     //第一屏动态插入
+    var totalNum = 0;
     for(var key in obj){
-        $('#im .main ul').append('<li class="'+key+'">' +
-            '<div class="main-left">' +
+        if(obj.hasOwnProperty(key)){
+            totalNum++;
+            $('#im .main ul').append('<li class="'+key+'">' +
+                '<div class="main-left">' +
                 '<span>1</span>' +
-                '<img src="../img/head-liyifeng.jpg" alt="">' +
-            '</div>' +
-            '<div class="main-right">' +
+                '<img src="'+'../img/'+key+'/head-'+key+'.jpg" alt="">' +
+                '</div>' +
+                '<div class="main-right">' +
                 '<h3>'+obj[key]['name']+'</h3>' +
                 '<p>'+obj[key]['huihua'][1]+'</p>' +
                 '<time>'+obj[key]['time']+'</time>' +
-            '</div>' +
-            '</li>');
+                '</div>' +
+                '</li>');
+        }
+
 
     }
+    $('#im em.total-num').text(totalNum);//插入总信息条数
+
+    history.pushState(1, "page 1", "index.html");
+
+
+
+
+
     //第一屏信息点击进入第二屏开始
 
-
+    var index = null;
     $('#im .main ul li').bind('touchend',function(event){
+
         event.preventDefault();
+        history.pushState(1, "page1", "index.html#list");
 
         $('#im').addClass('hide');
         $('#chat').addClass('show');
-        
-        var index = $(this).attr('class'),name=obj[index]['name'],html='',huihua=obj[index]['huihua'];
+        $('#chat').removeClass('hide');//后退时需要删除
+
+        index = $(this).attr('class');
+        var name=obj[index]['name'],html='',huihua=obj[index]['huihua'];
 
         $('#chat .time .name').text(name);
         //动态插入对话信息
         for(var k in huihua){
             if(k==1){
                 html +='<li class="animated fadeIn" style="display:block;">\
-                            <img src="../img/head-liyifeng.jpg" class="head">\
+                            <img src="'+'../img/'+index+'/head-'+index+'.jpg" class="head">\
                             <div class="detail">\
                                 <p>'+huihua[k]+'</p>\
                             </div>\
                         </li>';
             }else {
                 html +='<li class="animated fadeIn">\
-                            <img src="../img/head-liyifeng.jpg" class="head">\
+                            <img src="'+'../img/'+index+'/head-'+index+'.jpg" class="head">\
                             <div class="detail">\
                                 <p>'+huihua[k]+'</p>\
                             </div>\
@@ -181,35 +211,54 @@ $(function() {
 
 
 
-    $('.btn-video').bind('touchend',function(event){
-        event.preventDefault();
-        $('#video-1')[0].currentTime = 0.5;
+    //点击视频进入第三屏
+    $('#chat').on('touchend','.bofang',function(){
+        history.pushState(2, "page2", "index.html#video");
         $('#chat').addClass('hide');
         $('#video').addClass('show');
-        if ( isAndroid == 1 ) {
-            $('#video-1')[0].play();
-        } else {
-            setTimeout(function(){
-                $('#video-1')[0].play();
-            },500);
+        $('#video').removeClass('hide');
+
+        YangYiswipe.firstSwipe();//开始播放动画
+
+    });
+
+
+    //浏览器前进后退
+    window.addEventListener('popstate', function(e){
+
+        if(history.state==1 || history.state==2){
+            // clearTimeout(timer);//停止后面的定时器
+            $('#audio-chat')[0].currentTime = 0;//停止音乐
+            $('#audio-chat')[0].pause();
+
+            //清除所有谈话框所有定时器
+            for(var i = 0;i < timers.length;i++){
+                console.log(i);
+                clearTimeout(timers[i]);
+            }
+
+            $('#im').removeClass('hide');
+            $('#im').addClass('show');
+            $('#chat').removeClass('show');
+            $('#chat').addClass('hide');
+            // $('#video').removeClass('show');
+            // $('#video').addClass('hide');
+
+            //初始化动态添加的dom
+            $('#chat ul.list li').remove();
+            YangYiswipe.init();//初始化第三屏动画
+
+        }else{
+            history.replaceState(null, document.title, location.href);
         }
-        // _hmt.push(['_trackEvent', '视频', '状态', '视频开始']);
-    });
 
-    $('#end a.end-share').bind('touchend',function(event){
-        event.preventDefault();
-        $('#share').addClass('show');
-        // _hmt.push(['_trackEvent', '按钮', '点击', '分享按钮']);
-    });
+    },false);
 
-    $('#share').bind('touchend',function(event){
-        event.preventDefault();
-        $('#share').addClass('hide');
-        setTimeout(function(){
-            $('#share').removeClass('show hide');
-        },500);
-        // _hmt.push(['_trackEvent', '按钮', '点击', '分享弹层']);
-    });
+
+
+   
+
+
 
 })
 
@@ -236,67 +285,20 @@ function getNowFormatDate(otime) {
     return currentdate;
 }
 //实现顺序弹出对话
+
 function showMessage(i){
-    setTimeout(function(){
+    i-=1;
+    timer = setTimeout(function(){
         $('#audio-chat')[0].currentTime = 0;
         $('#audio-chat')[0].play();
         $('#chat .list li').eq(i).show();
         $('#chat .scroll').scrollTop( $('#chat .scroll')[0].scrollHeight );
     },2000*i);
+    timers.push(timer);
 }
 
 // ---------------------------------
 
-var fps = 1000 / 25;
 
-function runIme1() {
-    $('#audio-type')[0].play();
-    $('#chat .ime .btn').addClass('show');
-    runIme1Set = setInterval(runIme1Go,fps);
-}
 
-var runIme1Index = 1;
 
-function runIme1Go() {
-    var before = runIme1Index - 1;
-    $('#chat .ime1 img.index-' + before).remove();
-    runIme1Index++;
-    $('#chat .ime1 img.index-' + runIme1Index).addClass('show');
-    if ( runIme1Index == 31 ) {
-        clearInterval(runIme1Set);
-        $('#audio-type')[0].pause();
-        $('#chat .ime .hand').addClass('show');
-    };
-}
-
-function runIme2() {
-    $('#chat .ime .btn').addClass('show');
-    runIme2Set = setInterval(runIme2Go,fps);
-}
-
-var runIme2Index = 1;
-
-function runIme2Go() {
-    var before = runIme2Index - 1;
-    $('#chat .ime2 img.index-' + before).remove();
-    runIme2Index++;
-    $('#chat .ime2 img.index-' + runIme2Index).addClass('show');
-    if ( runIme2Index == 30 ) {
-        $('#chat .ime .btn').removeClass('show');
-    };
-    if ( runIme2Index == 39 ) {
-        clearInterval(runIme2Set);
-        $('#audio-emo')[0].pause();
-        $('#chat .ime .btn').addClass('show');
-        $('#chat .ime .hand').addClass('show');
-    };
-}
-
-function videoUpdate(event) {
-    if ( event.currentTime >= 67.5 ) {
-        $('#video').removeClass('show');
-        $('#end').addClass('show');
-        // _hmt.push(['_trackEvent', '视频', '状态', '视频结束']);
-    }
-
-}

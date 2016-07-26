@@ -12,8 +12,8 @@
     "lazyDir": [
         "../slice"
     ],
-    "supportREM": true,
+    "supportREM": false,
     "supportWebp": false,
     "supportChanged": true,
-    "reversion": true
+    "reversion": false
 }
