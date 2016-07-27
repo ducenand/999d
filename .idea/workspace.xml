@@ -2,204 +2,57 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8e5b64fd-58f3-41a7-96fc-c9bb754d031c" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dev/img/3.mp3" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dev/img/4.mp3" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dev/img/add.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dev/img/apply.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dev/img/arrow-2.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dev/img/arrow-3.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dev/img/arrow-5.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dev/img/btn.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dev/img/emo.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dev/img/end.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dev/img/hand.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dev/img/head-liyifeng.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dev/img/head-qq.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dev/img/head-qqbrowser.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dev/img/input1/1.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dev/img/input1/10.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dev/img/input1/11.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dev/img/input1/12.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dev/img/input1/13.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dev/img/input1/14.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dev/img/input1/15.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dev/img/input1/16.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dev/img/input1/17.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dev/img/input1/18.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dev/img/input1/19.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dev/img/input1/2.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dev/img/input1/20.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dev/img/input1/21.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dev/img/input1/22.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dev/img/input1/23.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dev/img/input1/24.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dev/img/input1/25.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dev/img/input1/26.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dev/img/input1/27.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dev/img/input1/28.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dev/img/input1/29.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dev/img/input1/3.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dev/img/input1/30.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dev/img/input1/31.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dev/img/input1/4.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dev/img/input1/5.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dev/img/input1/6.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dev/img/input1/7.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dev/img/input1/8.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dev/img/input1/9.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dev/img/input2/1.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dev/img/input2/10.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dev/img/input2/11.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dev/img/input2/12.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dev/img/input2/13.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dev/img/input2/14.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dev/img/input2/15.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dev/img/input2/16.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dev/img/input2/17.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dev/img/input2/18.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dev/img/input2/19.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dev/img/input2/2.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dev/img/input2/20.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dev/img/input2/21.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dev/img/input2/22.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dev/img/input2/23.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dev/img/input2/24.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dev/img/input2/25.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dev/img/input2/26.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dev/img/input2/27.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dev/img/input2/28.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dev/img/input2/29.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dev/img/input2/3.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dev/img/input2/30.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dev/img/input2/31.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dev/img/input2/32.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dev/img/input2/33.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dev/img/input2/34.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dev/img/input2/35.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dev/img/input2/36.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dev/img/input2/37.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dev/img/input2/38.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dev/img/input2/39.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dev/img/input2/4.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dev/img/input2/40.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dev/img/input2/5.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dev/img/input2/6.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dev/img/input2/7.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dev/img/input2/8.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dev/img/input2/9.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dev/img/loading.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dev/img/mes.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dev/img/photo-1.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dev/img/share.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dev/img/video.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/css/style-animate.min.dd3b689d.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/css/style-index.a1925e51.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/js/common.de5bc9bf.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/audio/1.mp3" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/audio/2.mp3" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/audio/3.mp3" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/audio/4.mp3" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/img/add.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/img/apply.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/img/arrow-2.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/img/arrow-3.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/img/arrow-5.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/img/btn.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/img/emo.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/img/end.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/img/hand.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/img/head-liyifeng.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/img/head-qq.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/img/head-qqbrowser.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/img/input1/1.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/img/input1/10.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/img/input1/11.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/img/input1/12.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/img/input1/13.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/img/input1/14.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/img/input1/15.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/img/input1/16.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/img/input1/17.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/img/input1/18.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/img/input1/19.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/img/input1/2.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/img/input1/20.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/img/input1/21.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/img/input1/22.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/img/input1/23.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/img/input1/24.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/img/input1/25.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/img/input1/26.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/img/input1/27.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/img/input1/28.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/img/input1/29.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/img/input1/3.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/img/input1/30.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/img/input1/31.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/img/input1/4.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/img/input1/5.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/img/input1/6.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/img/input1/7.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/img/input1/8.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/img/input1/9.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/img/input2/1.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/img/input2/10.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/img/input2/11.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/img/input2/12.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/img/input2/13.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/img/input2/14.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/img/input2/15.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/img/input2/16.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/img/input2/17.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/img/input2/18.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/img/input2/19.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/img/input2/2.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/img/input2/20.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/img/input2/21.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/img/input2/22.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/img/input2/23.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/img/input2/24.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/img/input2/25.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/img/input2/26.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/img/input2/27.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/img/input2/28.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/img/input2/29.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/img/input2/3.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/img/input2/30.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/img/input2/31.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/img/input2/32.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/img/input2/33.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/img/input2/34.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/img/input2/35.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/img/input2/36.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/img/input2/37.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/img/input2/38.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/img/input2/39.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/img/input2/4.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/img/input2/40.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/img/input2/5.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/img/input2/6.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/img/input2/7.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/img/input2/8.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/img/input2/9.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/img/loading.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/img/photo-1.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/img/share.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/img/video.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/video/1.mp4" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dev/img/loading.gif" afterPath="$PROJECT_DIR$/dev/img/loading.gif" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/img/loading.gif" afterPath="$PROJECT_DIR$/src/img/loading.gif" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/modules.xml___jb_tmp___" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/vcs.xml___jb_tmp___" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/css/style-animate.min.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/img/arrow-1.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/img/arrow-return.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/img/background.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/img/bofang.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/img/dibudaohang.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/img/gegewu/head-gegewu.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/img/gegewu/video-gegewu.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/img/jia.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/img/loading.gif" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/img/meijiu/head-meijiu.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/img/meijiu/video-meijiu.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/img/meo.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/img/mes.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/img/search.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/img/yangyi/head-yangyi.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/img/yangyi/page-1.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/img/yangyi/page-10.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/img/yangyi/page-11.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/img/yangyi/page-12.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/img/yangyi/page-13.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/img/yangyi/page-14.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/img/yangyi/page-2.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/img/yangyi/page-3.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/img/yangyi/page-4.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/img/yangyi/page-5.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/img/yangyi/page-6.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/img/yangyi/page-7.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/img/yangyi/page-8.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/img/yangyi/page-9.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/img/yangyi/video-yangyi.jpg" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dist/js/zepto-deferred.js" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dev/img/yangyi/page-11.png" afterPath="$PROJECT_DIR$/dev/img/yangyi/page-11.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/img/yangyi/page-11.png" afterPath="$PROJECT_DIR$/src/img/yangyi/page-11.png" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dev/css/style-index.css" afterPath="$PROJECT_DIR$/dev/css/style-index.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dev/html/index.html" afterPath="$PROJECT_DIR$/dev/html/index.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dev/js/common.js" afterPath="$PROJECT_DIR$/dev/js/common.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dev/js/swipe.js" afterPath="$PROJECT_DIR$/dev/js/swipe.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/css/style-index.css" afterPath="$PROJECT_DIR$/dist/css/style-index.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/html/index.html" afterPath="$PROJECT_DIR$/dist/html/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/js/common.js" afterPath="$PROJECT_DIR$/dist/js/common.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dist/js/swipe.js" afterPath="$PROJECT_DIR$/dist/js/swipe.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/css/style-index.less" afterPath="$PROJECT_DIR$/src/css/style-index.less" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/html/index.html" afterPath="$PROJECT_DIR$/src/html/index.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/js/common.js" afterPath="$PROJECT_DIR$/src/js/common.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/js/swipe.js" afterPath="$PROJECT_DIR$/src/js/swipe.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/manifest.json" afterPath="$PROJECT_DIR$/src/manifest.json" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/weflow.config.json" afterPath="$PROJECT_DIR$/weflow.config.json" />
     </list>
     <ignored path="20160716-promo-web99.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -223,8 +76,8 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/html/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1976">
-              <caret line="104" column="17" selection-start-line="104" selection-start-column="17" selection-end-line="104" selection-end-column="17" />
+            <state relative-caret-position="1520">
+              <caret line="80" column="0" selection-start-line="80" selection-start-column="0" selection-end-line="80" selection-end-column="0" />
               <folding>
                 <element signature="n#style#0;n#audio#0;n#body#0;n#html#0;n#!!top" expanded="true" />
               </folding>
@@ -232,50 +85,40 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="zepto-deferred.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/js/zepto-deferred.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1517">
-              <caret line="123" column="9" selection-start-line="123" selection-start-column="9" selection-end-line="123" selection-end-column="9" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="style-index.less" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/css/style-index.less">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="5605">
-              <caret line="350" column="18" selection-start-line="350" selection-start-column="18" selection-end-line="350" selection-end-column="18" />
+            <state relative-caret-position="220">
+              <caret line="71" column="0" selection-start-line="71" selection-start-column="0" selection-end-line="71" selection-end-column="0" />
               <folding>
-                <element signature="e#3762#4619#0" expanded="false" />
+                <element signature="e#4300#5157#0" expanded="false" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="common.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="common.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/js/common.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="4484">
-              <caret line="233" column="26" selection-start-line="233" selection-start-column="26" selection-end-line="233" selection-end-column="26" />
+            <state relative-caret-position="570">
+              <caret line="236" column="0" selection-start-line="236" selection-start-column="0" selection-end-line="236" selection-end-column="0" />
               <folding>
                 <element signature="e#0#39#0" expanded="false" />
-                <marker date="1469496822000" expanded="false" signature="4928:4942" ph="..." />
-                <marker date="1469496822000" expanded="true" signature="4943:5207" ph="..." />
-                <marker date="1469496822000" expanded="true" signature="5086:5176" ph="..." />
-                <marker date="1469496822000" expanded="true" signature="5282:5546" ph="..." />
-                <marker date="1469496822000" expanded="true" signature="5425:5515" ph="..." />
+                <marker date="1469607256000" expanded="false" signature="5176:5190" ph="..." />
+                <marker date="1469607256000" expanded="true" signature="5191:5455" ph="..." />
+                <marker date="1469607256000" expanded="true" signature="5334:5424" ph="..." />
+                <marker date="1469607256000" expanded="true" signature="5530:5794" ph="..." />
+                <marker date="1469607256000" expanded="true" signature="5673:5763" ph="..." />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="swipe.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="swipe.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/js/swipe.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="4731">
-              <caret line="249" column="22" selection-start-line="249" selection-start-column="22" selection-end-line="249" selection-end-column="22" />
+            <state relative-caret-position="1938">
+              <caret line="102" column="38" selection-start-line="102" selection-start-column="38" selection-end-line="102" selection-end-column="38" />
               <folding />
             </state>
           </provider>
@@ -302,12 +145,13 @@
         <option value="$PROJECT_DIR$/src/css/animate.min.css" />
         <option value="$PROJECT_DIR$/src/css/link/animate.min.css" />
         <option value="$PROJECT_DIR$/src/css/lib-reset.less" />
-        <option value="$PROJECT_DIR$/dist/html/index.html" />
         <option value="$PROJECT_DIR$/src/js/zepto-deferred.js" />
         <option value="$PROJECT_DIR$/src/js/swipe.ts" />
+        <option value="$PROJECT_DIR$/dist/html/index.html" />
+        <option value="$PROJECT_DIR$/src/js/layer.js" />
+        <option value="$PROJECT_DIR$/src/js/swipe.js" />
         <option value="$PROJECT_DIR$/src/css/style-index.less" />
         <option value="$PROJECT_DIR$/src/html/index.html" />
-        <option value="$PROJECT_DIR$/src/js/swipe.js" />
         <option value="$PROJECT_DIR$/src/js/common.js" />
       </list>
     </option>
@@ -348,6 +192,7 @@
     </navigator>
     <panes>
       <pane id="Scope" />
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -356,9 +201,132 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="20160716-promo-web99" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="20160716-promo-web99" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="20160716-promo-web99" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="20160716-promo-web99" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="20160716-promo-web99" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="20160716-promo-web99" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="js" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="20160716-promo-web99" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="20160716-promo-web99" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="img" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="20160716-promo-web99" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="20160716-promo-web99" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="dist" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="20160716-promo-web99" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="20160716-promo-web99" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="dev" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="20160716-promo-web99" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="20160716-promo-web99" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="dev" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="js" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="20160716-promo-web99" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="20160716-promo-web99" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="dev" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="css" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
-      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -464,33 +432,35 @@
       <updated>1468910917272</updated>
       <workItem from="1468910919780" duration="6117000" />
       <workItem from="1468982540855" duration="106467000" />
-      <workItem from="1469496847943" duration="111000" />
+      <workItem from="1469496847943" duration="1328000" />
+      <workItem from="1469498608654" duration="20222000" />
+      <workItem from="1469584412704" duration="15969000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="112695000" />
+    <option name="totallyTimeSpent" value="150103000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1280" height="800" extended-state="0" />
     <editor active="false" />
     <layout>
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.16484375" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1875" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32934928" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -511,6 +481,65 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/js/swipe.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="19">
+          <caret line="1" column="31" selection-start-line="1" selection-start-column="31" selection-end-line="1" selection-end-column="31" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/html/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1140">
+          <caret line="60" column="17" selection-start-line="60" selection-start-column="17" selection-end-line="60" selection-end-column="17" />
+          <folding>
+            <element signature="n#style#0;n#audio#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/js/zepto-deferred.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2299">
+          <caret line="123" column="9" selection-start-line="123" selection-start-column="9" selection-end-line="123" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/css/style-index.less">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="5605">
+          <caret line="350" column="18" selection-start-line="350" selection-start-column="18" selection-end-line="350" selection-end-column="18" />
+          <folding>
+            <element signature="e#4300#5157#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/js/common.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4142">
+          <caret line="220" column="41" selection-start-line="220" selection-start-column="41" selection-end-line="220" selection-end-column="41" />
+          <folding>
+            <element signature="e#0#39#0" expanded="false" />
+            <marker date="1469607256000" expanded="false" signature="5176:5190" ph="..." />
+            <marker date="1469607256000" expanded="true" signature="5191:5455" ph="..." />
+            <marker date="1469607256000" expanded="true" signature="5334:5424" ph="..." />
+            <marker date="1469607256000" expanded="true" signature="5530:5794" ph="..." />
+            <marker date="1469607256000" expanded="true" signature="5673:5763" ph="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/js/swipe.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/html/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1976">
@@ -534,7 +563,7 @@
         <state relative-caret-position="5605">
           <caret line="350" column="18" selection-start-line="350" selection-start-column="18" selection-end-line="350" selection-end-column="18" />
           <folding>
-            <element signature="e#3762#4619#0" expanded="false" />
+            <element signature="e#4300#5157#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -545,11 +574,11 @@
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="e#0#39#0" expanded="false" />
-            <marker date="1469496822000" expanded="false" signature="4928:4942" ph="..." />
-            <marker date="1469496822000" expanded="true" signature="4943:5207" ph="..." />
-            <marker date="1469496822000" expanded="true" signature="5086:5176" ph="..." />
-            <marker date="1469496822000" expanded="true" signature="5282:5546" ph="..." />
-            <marker date="1469496822000" expanded="true" signature="5425:5515" ph="..." />
+            <marker date="1469607256000" expanded="false" signature="5176:5190" ph="..." />
+            <marker date="1469607256000" expanded="true" signature="5191:5455" ph="..." />
+            <marker date="1469607256000" expanded="true" signature="5334:5424" ph="..." />
+            <marker date="1469607256000" expanded="true" signature="5530:5794" ph="..." />
+            <marker date="1469607256000" expanded="true" signature="5673:5763" ph="..." />
           </folding>
         </state>
       </provider>
@@ -671,27 +700,60 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/dist/html/js/build.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1593">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/js/zepto-deferred.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1273">
+          <caret line="123" column="9" selection-start-line="123" selection-start-column="9" selection-end-line="123" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/dist/html/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-82">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state relative-caret-position="57">
+          <caret line="3" column="26" selection-start-line="3" selection-start-column="26" selection-end-line="3" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/js/layer.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="538">
+          <caret line="1" column="3277" selection-start-line="1" selection-start-column="3277" selection-end-line="1" selection-end-column="3277" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/js/swipe.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1938">
+          <caret line="102" column="38" selection-start-line="102" selection-start-column="38" selection-end-line="102" selection-end-column="38" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/css/style-index.less">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="5605">
-          <caret line="350" column="18" selection-start-line="350" selection-start-column="18" selection-end-line="350" selection-end-column="18" />
+        <state relative-caret-position="220">
+          <caret line="71" column="0" selection-start-line="71" selection-start-column="0" selection-end-line="71" selection-end-column="0" />
           <folding>
-            <element signature="e#3762#4619#0" expanded="false" />
+            <element signature="e#4300#5157#0" expanded="false" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/html/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1976">
-          <caret line="104" column="17" selection-start-line="104" selection-start-column="17" selection-end-line="104" selection-end-column="17" />
+        <state relative-caret-position="1520">
+          <caret line="80" column="0" selection-start-line="80" selection-start-column="0" selection-end-line="80" selection-end-column="0" />
           <folding>
             <element signature="n#style#0;n#audio#0;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
@@ -700,32 +762,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/js/common.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="4484">
-          <caret line="233" column="26" selection-start-line="233" selection-start-column="26" selection-end-line="233" selection-end-column="26" />
+        <state relative-caret-position="570">
+          <caret line="236" column="0" selection-start-line="236" selection-start-column="0" selection-end-line="236" selection-end-column="0" />
           <folding>
             <element signature="e#0#39#0" expanded="false" />
-            <marker date="1469496822000" expanded="false" signature="4928:4942" ph="..." />
-            <marker date="1469496822000" expanded="true" signature="4943:5207" ph="..." />
-            <marker date="1469496822000" expanded="true" signature="5086:5176" ph="..." />
-            <marker date="1469496822000" expanded="true" signature="5282:5546" ph="..." />
-            <marker date="1469496822000" expanded="true" signature="5425:5515" ph="..." />
+            <marker date="1469607256000" expanded="false" signature="5176:5190" ph="..." />
+            <marker date="1469607256000" expanded="true" signature="5191:5455" ph="..." />
+            <marker date="1469607256000" expanded="true" signature="5334:5424" ph="..." />
+            <marker date="1469607256000" expanded="true" signature="5530:5794" ph="..." />
+            <marker date="1469607256000" expanded="true" signature="5673:5763" ph="..." />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/js/zepto-deferred.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1517">
-          <caret line="123" column="9" selection-start-line="123" selection-start-column="9" selection-end-line="123" selection-end-column="9" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/js/swipe.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="4731">
-          <caret line="249" column="22" selection-start-line="249" selection-start-column="22" selection-end-line="249" selection-end-column="22" />
-          <folding />
         </state>
       </provider>
     </entry>

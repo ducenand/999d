@@ -2,7 +2,7 @@
  * Created by ducen on 16/7/20.
  */
 var fileBasePath = '../';
-var myDate = new Date(),timers = [],timer=null;
+var myDate = new Date(),timers = [],timer=null,timer1=null,index = 'yangyi';
 var obj = {
     'yangyi':{
         'name':'杨艺',
@@ -10,7 +10,7 @@ var obj = {
         'huihua':{
             1:'你还好吗?',
             2:'最近跳广场舞了吗?'+' <img src="../img/meo.jpg">',//img为表情
-            3:'我一直都把你当作我的朋友,因为我们都喜欢跳舞。喜欢跳舞就一定要坚持跳。我们其实有好多话想给你说,先看看下面的小视屏吧!',
+            3:'我一直都把你当作我的朋友,因为我们都喜欢跳舞。喜欢跳舞就一定要坚持跳。我们其实有好多话想给你说,先看看下面的小视频吧!',
             4:'<img class="video animated zoomIn" src="../img/yangyi/video-yangyi.jpg"><img class="bofang animated flip" src="../img/bofang.jpg">'
         }
     },
@@ -19,7 +19,7 @@ var obj = {
         'time':getNowFormatDate(myDate.getTime()-100000),
         'huihua':{
             1:'我创作了新的舞蹈,不知道你喜欢吗?',
-            2:'最近跳广场舞了吗?',
+            2:'格格巫、',
             3:'我一直都把你当作我的朋友,因为我们都喜欢跳舞。喜欢跳舞就一定要坚持跳。我们其实有好多话想给你说,先看看下面的小视屏吧!',
             4:'<img class="video animated zoomIn" src="../img/yangyi/video-yangyi.jpg"><img class="bofang animated flip" src="../img/bofang.jpg">'
         }
@@ -48,9 +48,9 @@ var fileList = [
     'img/arrow-1.png',
     // 'img/emo.png',
     // 'img/video.jpg',
-    'img/1.mp3',
+    // 'img/1.mp3',
     'img/2.mp3',
-    // 'img/3.mp3',
+    'img/bgmusic.mp3',
     // 'img/4.mp3'
 ];
 
@@ -61,7 +61,7 @@ for(var j in obj){
         fileList.push('img/' + j + '/video-' + j + '.jpg');
         if (j == 'yangyi') {//加载杨艺老师视频页面图片
 
-            for (var i = 1; i <= 14; i++) {
+            for (var i = 1; i <= 15; i++) {
                 fileList.push('img/' + j + '/page-' + i + '.png');
             }
         }
@@ -91,7 +91,13 @@ loader.addCompletionListener(function () {
     setTimeout(function(){
         $('#loading').css('display','none');
         $('#im').addClass('show');
-    },2000);
+
+        timer1 = setTimeout(function () {
+            $('#zhezhao').css('display','block');
+            $('#zhezhao').addClass('fadeIn');
+        },5000);
+
+    },1000);
     
 
     // _hmt.push(['_trackEvent', '页面加载', '状态', '页面加载完成']);
@@ -105,7 +111,6 @@ $(function() {
     loader.start();
     // _hmt.push(['_trackEvent', '页面加载', '状态', '页面加载开始']);
 
-    YangYiswipe.init();//初始化第三屏动画
 
     autoHeight();
     //窗口变动修改一些页面的高度
@@ -128,7 +133,6 @@ $(function() {
     };
     if ( browser.versions.android ) {
         isAndroid = 1;
-        // $('#video-1').attr({'controls':'controls'});
         $('body').addClass('animate');//body添加动画
 
     } else {
@@ -157,19 +161,23 @@ $(function() {
     }
     $('#im em.total-num').text(totalNum);//插入总信息条数
 
-    history.pushState(1, "page 1", "index.html");
+    history.pushState(1, "page 1", "index.html");//记录用于单页面后退
 
-
+    $('#zhezhao .z-confirm').on('touchend',function () {
+        $('#zhezhao').css('display','none');
+    })
 
 
 
     //第一屏信息点击进入第二屏开始
 
-    var index = null;
+
     $('#im .main ul li').bind('touchend',function(event){
+        clearTimeout(timer1);//有行为就关闭定时器
+
 
         event.preventDefault();
-        history.pushState(1, "page1", "index.html#list");
+        history.pushState(1, "page1", "index.html#list");//记录用于单页面后退
 
         $('#im').addClass('hide');
         $('#chat').addClass('show');
@@ -206,8 +214,14 @@ $(function() {
             showMessage(i);
         }
 
+        YangYiswipe.init(index);//初始化第三屏动画
+
 
     });
+
+    //第二屏后退功能
+
+    $('#chat').on('touchend','.back',back);
 
 
 
@@ -219,35 +233,21 @@ $(function() {
         $('#video').removeClass('hide');
 
         YangYiswipe.firstSwipe();//开始播放动画
+        YangYiswipe.beginMusic();//开始播放音乐
 
     });
 
+
+    
+    
+    
 
     //浏览器前进后退
     window.addEventListener('popstate', function(e){
 
         if(history.state==1 || history.state==2){
-            // clearTimeout(timer);//停止后面的定时器
-            $('#audio-chat')[0].currentTime = 0;//停止音乐
-            $('#audio-chat')[0].pause();
 
-            //清除所有谈话框所有定时器
-            for(var i = 0;i < timers.length;i++){
-                console.log(i);
-                clearTimeout(timers[i]);
-            }
-
-            $('#im').removeClass('hide');
-            $('#im').addClass('show');
-            $('#chat').removeClass('show');
-            $('#chat').addClass('hide');
-            // $('#video').removeClass('show');
-            // $('#video').addClass('hide');
-
-            //初始化动态添加的dom
-            $('#chat ul.list li').remove();
-            YangYiswipe.init();//初始化第三屏动画
-
+            back();//后退
         }else{
             history.replaceState(null, document.title, location.href);
         }
@@ -255,12 +255,26 @@ $(function() {
     },false);
 
 
-
-   
-
-
-
 })
+
+//后退
+function back(){
+    $('#audio-chat')[0].currentTime = 0;//停止音乐
+    $('#audio-chat')[0].pause();
+    YangYiswipe.stopMusic();//停止播放音乐
+    //清除所有谈话框所有定时器
+    for(var i = 0;i < timers.length;i++){
+        clearTimeout(timers[i]);
+    }
+
+    $('#im').removeClass('hide');
+    $('#im').addClass('show');
+    $('#chat').removeClass('show');
+    $('#chat').addClass('hide');
+    //初始化动态添加的dom
+    $('#chat ul.list li').remove();
+    YangYiswipe.removeVideo();//初始化第三屏动画
+}
 
 //修改im主题高度----------------------------
 function autoHeight() {
@@ -270,7 +284,6 @@ function autoHeight() {
 }
 //格式化当前时间
 function getNowFormatDate(otime) {
-    console.log(otime);
     if(otime){
         var date = new Date(otime);
     }else{
@@ -293,8 +306,15 @@ function showMessage(i){
         $('#audio-chat')[0].play();
         $('#chat .list li').eq(i).show();
         $('#chat .scroll').scrollTop( $('#chat .scroll')[0].scrollHeight );
-    },2000*i);
+    },1500*i);
     timers.push(timer);
+
+    setInterval(function(){
+        $('#chat .bofang').removeClass('animated flip');
+        setTimeout(function () {
+            $('#chat .bofang').addClass('animated flip');
+        },3000);
+    },2000);
 }
 
 // ---------------------------------

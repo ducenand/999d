@@ -556,8 +556,44 @@ textarea {
 
 #loading img {
   position: absolute;
-  bottom: 0px;
+  bottom: 94px;
   left: 284px;
+}
+
+#zhezhao {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 99;
+  display: none;
+}
+
+#zhezhao div.z-content {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 500px;
+  height: 200px;
+  background: #ffffff;
+  font-size: 30px;
+  border-radius: 5px;
+  box-shadow: 0px 0px 2px #cccccc;
+}
+
+#zhezhao div.z-content ul li {
+  height: 100px;
+  text-align: center;
+  line-height: 100px;
+}
+
+#zhezhao div.z-content ul li:first-child {
+  border-bottom: 1px solid #ddd;
 }
 
 #im {
@@ -857,6 +893,7 @@ section.hide .bg {
   float: left;
   padding: 20px;
   position: relative;
+  max-width: 460px;
   border: 1px solid #d0d0d0;
   border-radius: 10px;
   background-color: #fff;
@@ -875,6 +912,10 @@ section.hide .bg {
   left: 0;
   bottom: 0;
   right: 0;
+}
+
+#chat .list li .detail p img.video {
+  width: 100%;
 }
 
 #chat .list li .detail p img {
@@ -1100,24 +1141,6 @@ body {
   background: url("../img/background.png") repeat;
 }
 
-.screen.screen3 div.box img.bak-top {
-  left: 150px;
-}
-
-.screen.screen5 div.box {
-  position: relative;
-}
-
-.screen.screen5 div.box div.box-bottom {
-  position: absolute;
-  bottom: 0px;
-  left: 0px;
-  height: 90px;
-  width: 100%;
-  z-index: 50;
-  background: #159bf9;
-}
-
 .screen div.box {
   position: relative;
   box-sizing: border-box;
@@ -1128,7 +1151,106 @@ body {
   overflow: hidden;
 }
 
-.screen div.box a.uploading {
+.screen div.box img {
+  vertical-align: top;
+  position: absolute;
+}
+
+.screen.screen1 div.box img.bak-img {
+  left: 0;
+  top: 0;
+  width: auto;
+  height: 100%;
+  display: none;
+  z-index: 50;
+}
+
+.screen.screen1 div.box img.bak-top {
+  top: 64px;
+  left: 75px;
+  z-index: 51;
+  display: none;
+}
+
+.screen.screen1 div.box img.bak-bottom {
+  bottom: 60px;
+  left: 100px;
+  z-index: 52;
+  display: none;
+}
+
+.screen.screen1 div.box img.bak-bottom-logo {
+  bottom: 95px;
+  right: 90px;
+  z-index: 53;
+  display: none;
+}
+
+.screen.screen1 div.box img.showpic {
+  display: block;
+}
+
+.screen.screen2 div.box img.bak-img {
+  left: 0;
+  top: 0;
+  width: auto;
+  height: 100%;
+  display: none;
+  z-index: 50;
+}
+
+.screen.screen2 div.box img.bak-top {
+  top: 30px;
+  left: 52px;
+  z-index: 51;
+  display: none;
+}
+
+.screen.screen2 div.box img.showpic {
+  display: block;
+}
+
+.screen.screen3 div.box img.bak-img {
+  left: 0;
+  top: 0;
+  width: auto;
+  height: 100%;
+  display: none;
+  z-index: 50;
+}
+
+.screen.screen3 div.box img.bak-top {
+  top: 30px;
+  left: 150px;
+  display: none;
+  z-index: 51;
+}
+
+.screen.screen3 div.box img.showpic {
+  display: block;
+}
+
+.screen.screen4 div.box img.bak-img {
+  left: 0;
+  top: 0;
+  width: auto;
+  height: 100%;
+  display: none;
+  z-index: 50;
+}
+
+.screen.screen4 div.box img.bak-top {
+  top: 30px;
+  left: 38px;
+  z-index: 51;
+  display: none;
+}
+
+.screen.screen4 div.box img.showpic {
+  display: block;
+}
+
+.screen.screen5 div.box a.uploading {
   display: none;
   position: absolute;
   width: 550px;
@@ -1141,78 +1263,115 @@ body {
   background: #c50050;
   text-align: center;
   line-height: 100px;
-  top: 250px;
+  top: 221px;
   left: 45px;
   border-radius: 10px;
 }
 
-.screen div.box a.uploading.showbutton {
+.screen.screen5 div.box a.uploading.showpic {
   display: block;
 }
 
-.screen div.box a.uploading i {
+.screen.screen5 div.box a.uploading i {
   font-weight: 400;
   font-style: normal;
 }
 
-.screen div.box img {
-  vertical-align: top;
+.screen.screen5 div.box div.box-bottom {
   position: absolute;
+  bottom: 0px;
+  left: 0px;
+  height: 144px;
+  width: 100%;
+  z-index: 50;
+  background: #159bf9;
+  display: none;
 }
 
-.screen div.box img.bak-img {
+.screen.screen5 div.box div.box-bottom img.bak-box-bottom {
+  position: absolute;
+  bottom: 45px;
+  left: 70px;
+}
+
+.screen.screen5 div.box div.showpic {
+  display: block;
+}
+
+.screen.screen5 div.box img.bak-img {
   left: 0;
   top: 0;
-  width: auto;
-  height: 100%;
+  width: 100%;
   display: none;
   z-index: 50;
 }
 
-.screen div.box img.bak-top {
-  top: 80px;
-  left: 75px;
-  z-index: 51;
-  display: none;
+.screen.screen5 div.box img.bak-top {
+  top: 58px;
+  left: 38px;
 }
 
-.screen div.box img.bak-bottom {
-  bottom: 50px;
-  left: 100px;
-  z-index: 52;
-  display: none;
-}
-
-.screen div.box img.bak-box-bottom {
-  bottom: 20px;
-  left: 75px;
-  z-index: 52;
-  display: none;
-}
-
-.screen div.box img.bak-bottom-logo {
-  bottom: 85px;
-  right: 90px;
-  z-index: 53;
-  display: none;
-}
-
-.screen div.box img.bak-huihua {
-  top: 578px;
+.screen.screen5 div.box img.bak-huihua {
+  top: 465px;
   right: 20px;
   z-index: 54;
-  max-width: 260px;
+  max-width: 330px;
   display: none;
 }
 
-.screen div.box img.bak-phone {
-  bottom: 75px;
-  right: 30px;
+.screen.screen5 div.box img.bak-phone {
+  bottom: 122px;
+  right: 92px;
   z-index: 55;
   max-width: 140px;
   display: none;
 }
 
-.screen div.box img.showpic {
+.screen.screen5 div.box img.bak-likedance {
+  top: 50px;
+  right: 20px;
+  z-index: 56;
+  display: none;
+}
+
+.screen.screen5 div.box img.showpic {
   display: block;
+}
+
+/*音乐*/
+
+#music {
+  width: 60px;
+  height: 60px;
+  /*border: 2px solid blue;*/
+  position: fixed;
+  top: 12px;
+  right: 12px;
+  z-index: 99;
+  display: none;
+}
+
+#music .music_bg {
+  width: 60px;
+  height: 60px;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+#music .music_pic {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  animation: music 2s linear infinite;
+}
+
+@keyframes music {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
 }

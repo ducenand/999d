@@ -9,290 +9,188 @@ var YangYiswipe = (function(){
     var timer = null;
     var setTime = [];
 
-    function firstSwipe () {
+    function swipe_0 () {
 
-        // pageSlider.moveTo(1);
-        $('#video .screen1 .box').addClass('fadeInLeft');//边框动画
+        
+        $('#video .screen1 .box').addClass('animated');//边框动画
 
         var f1 = function () {
             var defer = $.Deferred();
-            timer = setTimeout(function () {//老师图片背景出场
-                $('#video .screen1 .box .bak-img').addClass('showpic zoomInLeft');
-
-                // rm
-                // $('#video .screen1 .box').removeClass('fadeInLeft');//边框动画
-
-                defer.resolve();
-            }, 500);
-            setTime.push(timer);
-            return defer.promise();
+            return setTimeAnimate([$('#video .screen1 .box .bak-img')],500,defer);
         };
 
         f1().then(function () {
+            $('#video .screen1').siblings('.screen').find('img').removeClass('animated showpic');//边框动画
+
             var defer = $.Deferred();
-
-            timer = setTimeout(function() {//上部文字出场
-                $('.screen1 .bak-top').addClass('showpic pulse');
-
-                // rm
-                // $('#video .box .bak-img').removeClass('showpic zoomInLeft');
-
-                defer.resolve();
-            },1500);
-            setTime.push(timer);
-            return defer.promise();
-        }).then(function () {
-            var defer = $.Deferred();
-
-            timer = setTimeout(function() {//下部喜欢跳就跳出场
-                $('.screen1 .bak-bottom').addClass('showpic tada');
-                // rm
-                // $('.bak-top').removeClass('pulse');
-
-                defer.resolve();
-            },1500);
-
-            setTime.push(timer);
-            return defer.promise();
+            return setTimeAnimate([$('.screen1 .bak-top')],1500,defer);
 
         }).then(function () {
             var defer = $.Deferred();
-            timer = setTimeout(function() {//99logo出场
-                $('.screen1 .bak-bottom-logo').addClass('showpic bounceInDown');
-                defer.resolve();
-            },1500)
-
-            setTime.push(timer);
-            return defer.promise();
+            return setTimeAnimate([$('.screen1 .bak-bottom')],1500,defer);
 
         }).then(function () {
             var defer = $.Deferred();
-            timer = setTimeout(function() {//自动切换下一页
-                pageSlider.next();
-                secondSwipe();
+            return setTimeAnimate([$('.screen1 .bak-bottom-logo')],1500,defer);
 
-                defer.resolve();
-            },2500);
-            setTime.push(timer);
-            return defer.promise();
+        }).then(function () {
+            var defer = $.Deferred();
+            return setTimeAnimate(null,3500,defer,1,true);
 
         });
 
     }
 //视频第二屏动画
-    function secondSwipe(){
-        $('#video .screen2 .box').addClass('flipInX');//边框动画
+    function swipe_1(){
+
+        $('#video .screen2 .box').addClass('animated');//边框动画
         var f1 = function () {
             var defer = $.Deferred();
-            timer = setTimeout(function () {//老师图片背景出场
-                $('#video .screen2 .box .bak-img').addClass('showpic lightSpeedIn');
+            return setTimeAnimate([$('.screen2 .box .bak-img')],500,defer);
 
-                defer.resolve();
-            }, 2000);
-            setTime.push(timer);
-            return defer.promise();
         };
 
         f1().then(function () {
+            $('#video .screen2').siblings('.screen').find('img').removeClass('animated showpic');//边框动画
+
             var defer = $.Deferred();
-            timer = setTimeout(function() {//上部文字出场
-                $('.screen2 .bak-top').addClass('showpic rotateIn');
+            return setTimeAnimate([$('.screen2 .box .bak-top')],2000,defer);
 
-                defer.resolve();
-            },2000);
-
-            setTime.push(timer);
-            return defer.promise();
         }).then(function () {
             var defer = $.Deferred();
-            timer = setTimeout(function() {//自动切换下一页
-                pageSlider.next();
-                thirdlySwipe();
-                defer.resolve();
-            },4000);
-            setTime.push(timer);
-            return defer.promise();
+            return setTimeAnimate(null,5000,defer,2,true);
 
         });
     }
 //视频第三屏动画
-    function thirdlySwipe(){
-        $('#video .screen3 .box').addClass('fadeInDown');//边框动画
+    function swipe_2(){
+        $('#video .screen3 .box').addClass('animated');//边框动画
         var f1 = function () {
             var defer = $.Deferred();
-            timer = setTimeout(function () {//老师图片背景出场
-                $('#video .screen3 .box .bak-img').addClass('showpic zoomIn');
-
-                defer.resolve();
-            }, 2000);
-            setTime.push(timer);
-            return defer.promise();
+            return setTimeAnimate([$('.screen3 .box .bak-img')],500,defer);
         };
 
         f1().then(function () {
+            $('#video .screen3').siblings('.screen').find('img').removeClass('animated showpic');//边框动画
+
             var defer = $.Deferred();
-            timer = setTimeout(function() {//上部文字出场
-                $('.screen3 .bak-top').addClass('showpic bounceInDown');
-                defer.resolve();
-            },2000);
-            setTime.push(timer);
-            return defer.promise();
+            return setTimeAnimate([$('.screen3 .box .bak-top')],2000,defer);
+
         }).then(function () {
             var defer = $.Deferred();
-            timer = setTimeout(function() {//自动切换下一页
-                pageSlider.next();
-                fourthSwipe();
-                defer.resolve();
-            },4000);
-
-            setTime.push(timer);
-            return defer.promise();
+            return setTimeAnimate(null,5000,defer,3,true);
 
         });
     }
 // 视频第四屏动画
-    function fourthSwipe(){
-        $('#video .screen4 .box').addClass('fadeInRight');//边框动画
+    function swipe_3(){
+        $('#video .screen4 .box').addClass('animated');//边框动画
         var f1 = function () {
             var defer = $.Deferred();
-            timer = setTimeout(function () {//老师图片背景出场
-                $('#video .screen4 .box .bak-img').addClass('showpic slideInUp');
+            return setTimeAnimate([$('.screen4 .box .bak-img')],500,defer);
 
-                defer.resolve();
-            }, 2000);
-            setTime.push(timer);
-            return defer.promise();
         };
 
         f1().then(function () {
-            var defer = $.Deferred();
-            timer = setTimeout(function() {//上部文字出场
-                $('.screen4 .bak-top').addClass('showpic fadeInLeft');
-                defer.resolve();
-            },2000);
-            setTime.push(timer);
+            $('#video .screen4').siblings('.screen').find('img').removeClass('animated showpic');//边框动画
+            $('#video .screen5').siblings('.screen').find('a').removeClass('animated showpic');//边框动画
 
-            return defer.promise();
+            var defer = $.Deferred();
+            return setTimeAnimate([$('.screen4 .box .bak-top')],2000,defer);
+
         }).then(function () {
             var defer = $.Deferred();
-            timer = setTimeout(function() {//自动切换下一页
-                pageSlider.next();
-                fifthSwipe();
-                defer.resolve();
-            },4000);
-            setTime.push(timer);
-            return defer.promise();
+            return setTimeAnimate(null,5000,defer,4,true);
 
         });
     }
 
 // 视频动画第五屏
 
-    function fifthSwipe() {
-        $('#video .screen5 .box').addClass('flip');//边框动画
+    function swipe_4() {
+        // $('#video .screen5 .box').addClass('animated');//边框动画
+        $('#video .screen5 .bak-img').height($('body').height()-208);//边框动画
         var f1 = function () {
             var defer = $.Deferred();
-            timer = setTimeout(function () {//老师图片背景出场
-                $('#video .screen5 .box .bak-img').addClass('showpic rollIn');
+            return setTimeAnimate([$('.screen5 .box .bak-img'),$('.screen5 .box .bak-phone'),$('.screen5 .bak-box-bottom'),$('.screen5 .box-bottom')],500,defer);
 
-                defer.resolve();
-            }, 2000);
-            setTime.push(timer);
-            return defer.promise();
         };
 
         f1().then(function () {
-            var defer = $.Deferred();
-            timer = setTimeout(function() {//说话
-                $('.screen5 .bak-huihua').addClass('showpic zoomInRight');
-                defer.resolve();
-            },2000);
-            setTime.push(timer);
-            return defer.promise();
-        }).then(function () {
-            var defer = $.Deferred();
-            timer = setTimeout(function() {//说话
-                $('.screen5 .bak-phone').addClass('showpic fadeInLeft');
-                $('.screen5 .bak-box-bottom').addClass('showpic fadeInRight');
-                defer.resolve();
-            },2000);
-            setTime.push(timer);
-            return defer.promise();
-        }).then(function () {
-            var defer = $.Deferred();
-            timer = setTimeout(function() {//自动切换下一页
-                $('.screen5 .uploading').addClass('showbutton bounce');
+            $('#video .screen5').siblings('.screen').find('img').removeClass('animated showpic');//边框动画
+            $('#video .screen5').siblings('.screen').find('a').removeClass('animated showpic');//边框动画
 
-                defer.resolve();
-            },2000);
-            setTime.push(timer);
-            return defer.promise();
+            var defer = $.Deferred();
+            return setTimeAnimate([$('.screen5 .box .bak-likedance')],2000,defer);
 
         }).then(function () {
             var defer = $.Deferred();
-            timer = setTimeout(function() {//自动切换下一页
-                setInterval(function(){
-                    $('.screen5 .uploading').removeClass('bounce');
+            return setTimeAnimate([$('.screen5 .box .uploading')],2000,defer);
 
-                },1000);
-                setInterval(function(){
-                    $('.screen5 .uploading').addClass('bounce');
-                },3000);
-                defer.resolve();
+
+        }).then(function () {
+            var defer = $.Deferred();
+            return setTimeAnimate([$('.screen5 .box .bak-huihua')],2000,defer);
+        }).then(function () {
+            timer = setInterval(function(){
+                $('.screen5 .uploading').removeClass('animated bounce');
+               setTimeout(function () {
+                   $('.screen5 .uploading').addClass('animated bounce');
+               },3000);
             },2000);
-            setTime.push(timer);
 
         })
     }
     //初始化
-    function init(){
+    function init(index){
 
         removeVideo();
         html = '<section id="video" class="warp hide">';
         // 第一屏
-        html += '<section class="screen screen1" data-lock-next="true" data-lock-prev="true">' +
-                    '<div class="box animated">' +
-                        '<img class="bak-top animated" src="../img/yangyi/page-4.png" alt="">' +
-                        '<img class="bak-img animated" src="../img/yangyi/page-1.png" alt="">' +
-                        '<img class="bak-bottom animated" src="../img/yangyi/page-2.png" alt="">' +
-                        '<img class="bak-bottom-logo animated" src="../img/yangyi/page-3.png" alt="">' +
+        html += '<section class="screen screen1">' +
+                    '<div class="box fadeInLeft">' +
+                        '<img class="bak-top pulse" src="../img/'+index+'/page-4.png" alt="">' +
+                        '<img class="bak-img fadeIn" src="../img/'+index+'/page-1.png" alt="">' +
+                        '<img class="bak-bottom tada" src="../img/'+index+'/page-2.png" alt="">' +
+                        '<img class="bak-bottom-logo fadeInRight" src="../img/'+index+'/page-3.png" alt="">' +
                     '</div>' +
                 '</section>';
         // 第二屏
-        html += '<section class="screen screen2" data-lock-next="true" data-lock-prev="true">' +
-                    '<div class="box animated">' +
-                        '<img class="bak-top animated" src="../img/yangyi/page-6.png" alt="">' +
-                        '<img class="bak-img animated" src="../img/yangyi/page-5.png" alt="">' +
+        html += '<section class="screen screen2">' +
+                    '<div class="box flipInX">' +
+                        '<img class="bak-top fadeInDown" src="../img/'+index+'/page-6.png" alt="">' +
+                        '<img class="bak-img lightSpeedIn" src="../img/'+index+'/page-5.png" alt="">' +
                     '</div>' +
                 '</section>';
 
         //第三屏
 
-        html +='<section class="screen screen3" data-lock-next="true" data-lock-prev="true">' +
-                    '<div class="box animated">' +
-                        '<img class="bak-top animated" src="../img/yangyi/page-8.png" alt="">' +
-                        '<img class="bak-img animated" src="../img/yangyi/page-7.png" alt=""> ' +
+        html +='<section class="screen screen3">' +
+                    '<div class="box fadeInDown">' +
+                        '<img class="bak-top bounceInDown" src="../img/'+index+'/page-8.png" alt="">' +
+                        '<img class="bak-img zoomIn" src="../img/'+index+'/page-7.png" alt=""> ' +
                     '</div>' +
                 '</section>';
         //第四屏
 
-        html +='<section class="screen screen4" data-lock-next="true" data-lock-prev="true">' +
-                    '<div class="box animated">' +
-                        '<img class="bak-top animated" src="../img/yangyi/page-10.png" alt="">' +
-                        '<img class="bak-img animated" src="../img/yangyi/page-9.png" alt="">' +
+        html +='<section class="screen screen4">' +
+                    '<div class="box fadeInRight">' +
+                        '<img class="bak-top fadeInLeft" src="../img/'+index+'/page-10.png" alt="">' +
+                        '<img class="bak-img zoomIn" src="../img/'+index+'/page-9.png" alt="">' +
                     '</div>' +
                 '</section>';
 
         //第五屏
 
-        html +='<section class="screen screen5" data-lock-next="true" data-lock-prev="true">' +
-                    '<div class="box animated">' +
-                        '<img class="bak-img animated" src="../img/yangyi/page-11.png" alt="">' +
-                        '<img class="bak-huihua animated" src="../img/yangyi/page-12.png" alt="">' +
-                        '<img class="bak-phone animated" src="../img/yangyi/page-14.png" alt="">' +
-                        '<a class="uploading animated" href="">点击下载 <i>99广场舞手机版</i></a>' +
-                        '<div class="box-bottom">' +
-                            '<img class="bak-box-bottom animated" src="../img/yangyi/page-13.png" alt="">' +
+        html +='<section class="screen screen5" >' +
+                    '<div class="box flip">' +
+                        '<img class="bak-img fadeInLeft" src="../img/'+index+'/page-11.png" alt="">' +
+                        '<img class="bak-huihua zoomInRight" src="../img/'+index+'/page-12.png" alt="">' +
+                        '<img class="bak-phone fadeInLeft" src="../img/'+index+'/page-14.png" alt="">' +
+                        '<img class="bak-likedance bounce" src="../img/'+index+'/page-15.png" alt="">' +
+                        '<a class="uploading bounce" href="">点击下载 <i>99广场舞手机版</i></a>' +
+                        '<div class="box-bottom fadeInRight">' +
+                            '<img class="bak-box-bottom fadeInRight" src="../img/'+index+'/page-13.png" alt="">' +
                         '</div>' +
                     '</div>' +
                 '</section>';
@@ -304,24 +202,114 @@ var YangYiswipe = (function(){
         $('#chat').after(html);
 
         pageSlider = new WxMoment.PageSlider({
-            pages: $('.screen')
+            pages: $('.screen'),
+            onSwipeUp: function () {
+                if(this.index!==4){
+                    cleartime();
+                    eval("swipe_"+ (this.index+1).toString()+ "()");
+                    this.next(); //下一屏
+                }
+
+            },
+            onSwipeDown: function () {
+                if(this.index!==0){
+                    cleartime();
+                    eval("swipe_"+ (this.index-1).toString()+ "()");
+                    this.prev(); //上一屏
+                }
+            }
         });
+
+
+
        
     }
+
+    //统一处理延迟动画
+    function setTimeAnimate(arrEle,time,defer,index,bloon) {
+        timer = setTimeout(function () {//老师图片背景出场
+
+            if(bloon){
+                pageSlider.next();
+                eval("swipe_"+ index.toString()+ "()");
+            }else{
+                for(var i=0;i<arrEle.length;i++){
+                    arrEle[i].addClass('showpic animated');
+                    
+                }
+            }
+            defer.resolve();
+        }, time);
+
+        setTime.push(timer);
+        return defer.promise();
+    }
+
+
     //删除所有定时器初始化
     function removeVideo(){
         pageSlider=null;
         $('#video').remove();
         //清除所有定时器
+        cleartime();
+    }
+
+
+    //清除所有定时器
+    function cleartime() {
         for (var i=0;i<setTime.length;i++){
             clearTimeout(setTime[i]);
         }
     }
     
+    
+    function startMuisc(){
+        //第三屏音乐控制
+        $('#music').css('display','block');
+        $('.music_bg').css('display','block');
+        $('.music_pic').css('animation','music 2s linear infinite');
+        $('#music .aud')[0].play();
+
+        //音乐控制结束
+    }
+    function stopMusic(){
+        $('#music .aud')[0].pause();
+        $('#music').css('display','none');
+        $('.music_bg').css('display','none');
+        $('.music_pic').css('animation','none');
+    }
+    
+    function pauseMusic(){
+        $('#music .aud')[0].pause();
+        $('.music_bg').css('display','none');
+        $('.music_pic').css('animation','none');
+    }
+    
+    function beginMusic() {
+        var music_sta = 1;
+        startMuisc();
+
+        $('#music').on('touchend',function(){
+            if(music_sta==1){
+                pauseMusic();
+                music_sta=2;
+            }else if(music_sta==2){
+                startMuisc();
+                music_sta = 1;
+            }
+        })
+
+    }
+    
     return {
         init:init,
-        firstSwipe:firstSwipe,
-        removeVideo:removeVideo
+        firstSwipe:swipe_0,
+        removeVideo:removeVideo,
+        startMuisc:startMuisc,
+        pauseMusic:pauseMusic,
+        beginMusic:beginMusic,
+        stopMusic:stopMusic
+
     }
     
 })();

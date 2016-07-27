@@ -3,7 +3,6 @@
 <head>
     <meta charset="UTF-8">
     <title>喜欢跳舞,就去跳</title>
-    <!--<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />-->
     <meta name="viewport" content="target-densitydpi=device-dpi,width=720,user-scalable=0" />
     <meta name="keywords" content="99广场舞" />
     <meta name="description" content="喜欢跳舞就去跳,我在99广场舞等你" />
@@ -11,9 +10,10 @@
     <meta name="format-detection" content="telephone=no">
     <link rel="stylesheet" type="text/css" href="../css/style-animate.min.css">
     <link rel="stylesheet" type="text/css" href="../css/style-index.css" />
-
 </head>
 <body>
+
+
 <!--页面加载中开始-->
 <section id="loading">
     <img src="../img/loading.gif" alt="页面加载中">
@@ -58,50 +58,8 @@
 
 <!--第二屏聊天信息结束-->
 
-<!--第三屏视频播放开始-->
+<!--第三屏视频播放开始动态插入-->
 <!--<section id="video" class="warp">-->
-
-    <!--<section class="screen screen1" data-lock-next="true" data-lock-prev="true">-->
-        <!--<div class="box animated">-->
-            <!--<img class="bak-top animated" src="../img/yangyi/page-4.png" alt="">-->
-            <!--<img class="bak-img animated" src="../img/yangyi/page-1.png" alt="">-->
-            <!--<img class="bak-bottom animated" src="../img/yangyi/page-2.png" alt="">-->
-            <!--<img class="bak-bottom-logo animated" src="../img/yangyi/page-3.png" alt="">-->
-        <!--</div>-->
-    <!--</section>-->
-    <!--<section class="screen screen2" data-lock-next="true" data-lock-prev="true">-->
-        <!--<div class="box animated">-->
-            <!--<img class="bak-top animated" src="../img/yangyi/page-6.png" alt="">-->
-            <!--<img class="bak-img animated" src="../img/yangyi/page-5.png" alt="">-->
-        <!--</div>-->
-    <!--</section>-->
-    <!--<section class="screen screen3" data-lock-next="true" data-lock-prev="true">-->
-        <!--<div class="box animated">-->
-            <!--<img class="bak-top animated" src="../img/yangyi/page-8.png" alt="">-->
-            <!--<img class="bak-img animated" src="../img/yangyi/page-7.png" alt="">-->
-        <!--</div>-->
-    <!--</section>-->
-    <!--<section class="screen screen4" data-lock-next="true" data-lock-prev="true">-->
-        <!--<div class="box animated">-->
-            <!--<img class="bak-top animated" src="../img/yangyi/page-10.png" alt="">-->
-            <!--<img class="bak-img animated" src="../img/yangyi/page-9.png" alt="">-->
-        <!--</div>-->
-    <!--</section>-->
-    <!--<section class="screen screen5" data-lock-next="true" data-lock-prev="true">-->
-        <!--<div class="box animated">-->
-            <!--<img class="bak-img animated" src="../img/yangyi/page-11.png" alt="">-->
-            <!--&lt;!&ndash;对话&ndash;&gt;-->
-            <!--<img class="bak-huihua animated" src="../img/yangyi/page-12.png" alt="">-->
-            <!--&lt;!&ndash;手机&ndash;&gt;-->
-            <!--<img class="bak-phone animated" src="../img/yangyi/page-14.png" alt="">-->
-            <!--<a class="uploading animated" href="">点击下载 <i>99广场舞手机版</i></a>-->
-            <!--<div class="box-bottom">-->
-                <!--<img class="bak-box-bottom animated" src="../img/yangyi/page-13.png" alt="">-->
-            <!--</div>-->
-        <!--</div>-->
-
-        <!--<div class="screen-arrow"></div>-->
-    <!--</section>-->
 <!--</section>-->
 <!--第三屏视频播放结束-->
 
@@ -111,24 +69,26 @@
 <audio preload="auto" style="width:0;height:0" id="audio-chat">
     <source src="../img/2.mp3" type="audio/mpeg" />
 </audio>
-<!--<audio preload="auto" style="width:0;height:0" id="audio-btn">-->
-    <!--<source src="../img/2.mp3" type="audio/mpeg" />-->
-<!--</audio>-->
-<!--<audio preload="auto" style="width:0;height:0" id="audio-type">-->
-    <!--<source src="../img/3.mp3" type="audio/mpeg" />-->
-<!--</audio>-->
-<!--<audio preload="auto" style="width:0;height:0" id="audio-emo">-->
-    <!--<source src="../img/4.mp3" type="audio/mpeg" />-->
-<!--</audio>-->
 
+<div id="music">
+    <img src="../img/music.gif" alt="" class="music_bg" />
+    <img src="../img/music_off.png" alt="" class="music_pic" />
+    <audio  preload="auto" loop="loop" class="aud">
+        <source src="../img/bgmusic.mp3" type="audio/mpeg" />
+    </audio>
+</div>
+<!--音乐区域结束-->
 
-
-
+<div id="zhezhao" class="animated">
+    <div class="z-content">
+        <ul>
+            <li>想和谁聊天？请点击他的头像</li>
+            <li class="z-confirm">确认</li>
+        </ul>
+    </div>
+</div>
 
 <script src="http://wximg.qq.com/wxp/libs/wxmoment/0.0.4/wxmoment.min.js"></script>
-<script src="../js/zepto-deferred.js"></script>
-<script src="../js/swipe.js"></script>
-<script src="../js/common.js"></script>
-
+<script src="./js/build.js"></script>
 </body>
 </html>
