@@ -10,7 +10,7 @@ var obj = {
         'huihua':{
             1:'你还好吗?',
             2:'最近跳广场舞了吗?'+' <img src="../img/meo.jpg">',//img为表情
-            3:'我一直都把你当作我的朋友,因为我们都喜欢跳舞。喜欢跳舞就一定要坚持跳。我们其实有好多话想给你说,先看看下面的小视频吧!',
+            3:'我一直都把你当作我的朋友,因为我们都喜欢跳舞。喜欢跳舞就一定要坚持跳。我其实有好多话想给你说,先看看下面的小视频吧!',
             4:'<img class="video animated zoomIn" src="../img/yangyi/video-yangyi.jpg"><img class="bofang animated flip" src="../img/bofang.jpg">'
         }
     },
@@ -98,7 +98,8 @@ loader.addCompletionListener(function () {
         },5000);
 
     },1000);
-    
+
+    _czc.push(["_trackEvent", "页面加载", "状态",'页面加载完成']);
 
     // _hmt.push(['_trackEvent', '页面加载', '状态', '页面加载完成']);
 });
@@ -109,12 +110,11 @@ $(function() {
     new WxMoment.OrientationTip();
     //启动资源加载管理器
     loader.start();
-    // _hmt.push(['_trackEvent', '页面加载', '状态', '页面加载开始']);
-
+    _czc.push(["_trackEvent", "页面加载", "状态",'页面加载开始']);
 
     autoHeight();
     //窗口变动修改一些页面的高度
-    $(window).bind('resize',function(event){
+    $(window).bind('resize',function(){
         autoHeight();
     });
 
@@ -165,6 +165,8 @@ $(function() {
 
     $('#zhezhao .z-confirm').on('touchend',function () {
         $('#zhezhao').css('display','none');
+        _czc.push(["_trackEvent", "关闭遮罩", "点击","第一屏5秒弹出遮罩"]);
+
     })
 
 
@@ -174,7 +176,7 @@ $(function() {
 
     $('#im .main ul li').bind('touchend',function(event){
         clearTimeout(timer1);//有行为就关闭定时器
-
+        _czc.push(["_trackEvent", "聊天会话开始", "点击","第二屏聊天会话"]);
 
         event.preventDefault();
         history.pushState(1, "page1", "index.html#list");//记录用于单页面后退
@@ -223,7 +225,7 @@ $(function() {
 
     $('#chat').on('touchend','.back',back);
 
-
+    
 
     //点击视频进入第三屏
     $('#chat').on('touchend','.bofang',function(){
@@ -231,11 +233,21 @@ $(function() {
         $('#chat').addClass('hide');
         $('#video').addClass('show');
         $('#video').removeClass('hide');
-
+        _czc.push(["_trackEvent", "播放视频开始", "点击","第三屏视频开始"]);
         YangYiswipe.firstSwipe();//开始播放动画
         YangYiswipe.beginMusic();//开始播放音乐
 
     });
+    
+    //点击视频下载
+    $('body').on('click','#video .screen5',function () {
+        if(isAndroid==1){
+            _czc.push(["_trackEvent", "Android下载", "点击","点击视频第五屏下载"]);
+        }else{
+            _czc.push(["_trackEvent", "IOS下载", "点击","点击视频第五屏下载"]);
+        }
+        location.href = 'http://www.999d.com/app/dl.php?fr=tiaowujiuqutiao';
+    })
 
 
     
@@ -316,6 +328,8 @@ function showMessage(i){
         },3000);
     },2000);
 }
+
+
 
 // ---------------------------------
 

@@ -14,6 +14,6 @@
     ],
     "supportREM": false,
     "supportWebp": false,
-    "supportChanged": true,
+    "supportChanged": false,
     "reversion": false
 }

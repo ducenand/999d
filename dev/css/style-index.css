@@ -1156,6 +1156,14 @@ body {
   position: absolute;
 }
 
+.screen div.box img.bak-img {
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+}
+
 .screen.screen1 div.box img.bak-img {
   left: 0;
   top: 0;
@@ -1299,6 +1307,7 @@ body {
 }
 
 .screen.screen5 div.box img.bak-img {
+  margin: initial;
   left: 0;
   top: 0;
   width: 100%;
@@ -1312,7 +1321,7 @@ body {
 }
 
 .screen.screen5 div.box img.bak-huihua {
-  top: 465px;
+  top: 460px;
   right: 20px;
   z-index: 54;
   max-width: 330px;

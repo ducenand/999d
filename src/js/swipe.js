@@ -11,7 +11,8 @@ var YangYiswipe = (function(){
 
     function swipe_0 () {
 
-        
+        _czc.push(["_trackEvent", "视屏播放", "状态",'第一屏']);
+
         $('#video .screen1 .box').addClass('animated');//边框动画
 
         var f1 = function () {
@@ -42,6 +43,7 @@ var YangYiswipe = (function(){
     }
 //视频第二屏动画
     function swipe_1(){
+        _czc.push(["_trackEvent", "视屏播放", "状态",'第二屏']);
 
         $('#video .screen2 .box').addClass('animated');//边框动画
         var f1 = function () {
@@ -64,6 +66,8 @@ var YangYiswipe = (function(){
     }
 //视频第三屏动画
     function swipe_2(){
+        _czc.push(["_trackEvent", "视屏播放", "状态",'第三屏']);
+
         $('#video .screen3 .box').addClass('animated');//边框动画
         var f1 = function () {
             var defer = $.Deferred();
@@ -84,6 +88,8 @@ var YangYiswipe = (function(){
     }
 // 视频第四屏动画
     function swipe_3(){
+        _czc.push(["_trackEvent", "视屏播放", "状态",'第四屏']);
+
         $('#video .screen4 .box').addClass('animated');//边框动画
         var f1 = function () {
             var defer = $.Deferred();
@@ -108,6 +114,8 @@ var YangYiswipe = (function(){
 // 视频动画第五屏
 
     function swipe_4() {
+        _czc.push(["_trackEvent", "视屏播放", "状态",'第五屏']);
+
         // $('#video .screen5 .box').addClass('animated');//边框动画
         $('#video .screen5 .bak-img').height($('body').height()-208);//边框动画
         var f1 = function () {
@@ -188,7 +196,7 @@ var YangYiswipe = (function(){
                         '<img class="bak-huihua zoomInRight" src="../img/'+index+'/page-12.png" alt="">' +
                         '<img class="bak-phone fadeInLeft" src="../img/'+index+'/page-14.png" alt="">' +
                         '<img class="bak-likedance bounce" src="../img/'+index+'/page-15.png" alt="">' +
-                        '<a class="uploading bounce" href="">点击下载 <i>99广场舞手机版</i></a>' +
+                        '<a class="uploading bounce"  href="javascript:;">点击下载 <i>99广场舞手机版</i></a>' +
                         '<div class="box-bottom fadeInRight">' +
                             '<img class="bak-box-bottom fadeInRight" src="../img/'+index+'/page-13.png" alt="">' +
                         '</div>' +
@@ -227,6 +235,8 @@ var YangYiswipe = (function(){
 
     //统一处理延迟动画
     function setTimeAnimate(arrEle,time,defer,index,bloon) {
+
+
         timer = setTimeout(function () {//老师图片背景出场
 
             if(bloon){
@@ -300,6 +310,7 @@ var YangYiswipe = (function(){
         })
 
     }
+
     
     return {
         init:init,
